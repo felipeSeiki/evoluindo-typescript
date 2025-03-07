@@ -4,7 +4,7 @@ interface Repositorio<T>{
 }
 
 class UsuarioRepositorio implements Repositorio<{nome: string; email: string}> {
-    private usuarios: {nome: string; email: string}[] = [];
+    private usuarios: { nome: string; email: string }[] = [];
 
     salvar(dado: { nome: string; email: string; }): void {
         this.usuarios.push(dado);
